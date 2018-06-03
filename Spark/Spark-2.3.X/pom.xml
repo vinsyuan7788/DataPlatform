@@ -18,7 +18,7 @@
     </license>
   </licenses>
 
-   <!-- Properties for introduction of dependencies -->
+  <!-- Properties for introduction of dependencies -->
   <properties>
     <scala.version>2.11.11</scala.version>
     <scala.compatable.version>2.11</scala.compatable.version>
