@@ -1,10 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>application.data.platform</groupId>
-  <artifactId>Flink-1.5.X</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <parent>
+    <artifactId>Flink</artifactId>
+    <groupId>application.data.platform</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>Flink-1.2.X</artifactId>
   <name>${project.artifactId}</name>
-  <description>My wonderfull scala app</description>
+  <description>Flink-1.2.X</description>
   <inceptionYear>2015</inceptionYear>
   <licenses>
     <license>
@@ -16,13 +20,9 @@
 
   <!-- Properties for introduction of dependencies -->
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <encoding>UTF-8</encoding>
     <scala.version>2.11.11</scala.version>
     <scala.compatable.version>2.11</scala.compatable.version>
     <scalatest.version>3.0.4</scalatest.version>
-    <akka.version>2.4.17</akka.version>
   </properties>
 
 <!--
@@ -50,14 +50,6 @@
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
       <version>${scala.version}</version>
-    </dependency>
-
-    <!-- JUnit Test for Java -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.8.1</version>
-      <scope>test</scope>
     </dependency>
     
 <!--  
